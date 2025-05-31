@@ -1,6 +1,25 @@
-print("Made By firedevil (Ryan | 404678244215029762 | https://discord.gg/ettP4TjbAb)")
+print("byvhh")
+repeat
+    task.wait()
+until game:IsLoaded()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fdvll/pet-simulator-99/main/waitForGameLoad.lua"))()
+repeat
+    task.wait()
+until game.PlaceId ~= nil
+
+repeat
+    task.wait()
+until game:GetService("Players").LocalPlayer and game:GetService("Players").LocalPlayer.Character and game:GetService("Players").LocalPlayer.Character.HumanoidRootPart
+
+repeat
+    task.wait()
+until game:GetService("Workspace"):FindFirstChild("Map") or game:GetService("Workspace"):FindFirstChild("Map2")
+
+repeat
+    task.wait()
+until game:GetService("Workspace").__THINGS and game:GetService("Workspace").__DEBRIS
+
+print("[CLIENT] Loaded Game")
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local LocalPlayer = game:GetService("Players").LocalPlayer
